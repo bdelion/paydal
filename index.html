@@ -18,11 +18,17 @@
         </div>
         <div>
             <label for="kiloReal">Kilometrage réalisé&nbsp;:</label>
-            <input type="text" name="kiloReal" value="0">
+            <input id="kiloSaisie" type="text" name="kiloReal" value="0">
             <input type="hidden" name="secret" value="chut">
-            <input type="submit" name="action" value="Ajouter">
+            <input onclick="myFunction()" type="submit" name="action" value="Ajouter">
         </div>
     </form>
 </body>
+
+<script>
+    function myFunction() {
+        alert(document.getElementById("kiloSaisie").value);
+    }
+</script>
 
 </html>
